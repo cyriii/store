@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_home">
+        <item>商品信息</item>
+        <item>客户信息</item>
+        <item>供应商信息</item>
+    </string-array>
+
+    <string-array name="tab_manage">
+        <item>商品入库</item>
+        <item>商品出库</item>
+    </string-array>
+
+</resources>

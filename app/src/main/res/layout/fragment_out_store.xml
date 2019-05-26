@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/supplier_name"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:text="@string/customer_name1"
+                android:textColor="@color/c_2c"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_supplier_name"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:drawableEnd="@mipmap/go"
+                android:gravity="center_vertical"
+                android:hint="@string/select_client_name"
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/c_2c"
+                android:textColorHint="@color/c_d0"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/supplier_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/supplier_name"
+                app:layout_constraintTop_toTopOf="@+id/supplier_name" />
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/c_6b"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/supplier_name"
+                app:layout_constraintTop_toBottomOf="@+id/supplier_name" />
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:text="@string/goods_name"
+                android:textColor="@color/c_2c"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v1" />
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:drawableEnd="@mipmap/go"
+                android:gravity="center_vertical"
+                android:hint="@string/select_goods_name"
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/c_2c"
+                android:textColorHint="@color/c_d0"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/goods_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/supplier_name"
+                app:layout_constraintTop_toTopOf="@+id/goods_name" />
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/c_6b"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/supplier_name"
+                app:layout_constraintTop_toBottomOf="@+id/goods_name" />
+
+            <TextView
+                android:id="@+id/supplyNum"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:text="@string/out_num"
+                android:textColor="@color/c_2c"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v2" />
+
+            <EditText
+                android:id="@+id/et_supply_num"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/input_out_num"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/c_2c"
+                android:textColorHint="@color/c_d0"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/supplyNum"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/supplier_name"
+                app:layout_constraintTop_toTopOf="@+id/supplyNum" />
+
+            <View
+                android:id="@+id/v3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/c_6b"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/supplier_name"
+                app:layout_constraintTop_toBottomOf="@+id/supplyNum" />
+
+            <TextView
+                android:id="@+id/supplyUnivalence"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:text="@string/out_univalence"
+                android:textColor="@color/c_2c"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v3" />
+
+            <EditText
+                android:id="@+id/et_supply_univalence"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/input_out_univalence"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/c_2c"
+                android:textColorHint="@color/c_d0"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/supplyUnivalence"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/supplier_name"
+                app:layout_constraintTop_toTopOf="@+id/supplyUnivalence" />
+
+            <View
+                android:id="@+id/v4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/c_6b"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/supplier_name"
+                app:layout_constraintTop_toBottomOf="@+id/supplyUnivalence" />
+
+
+            <TextView
+                android:id="@+id/supplyDate"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:text="@string/out_date"
+                android:textColor="@color/c_2c"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v4" />
+
+            <TextView
+                android:id="@+id/tv_supply_date"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:drawableEnd="@mipmap/go"
+                android:gravity="center_vertical"
+                android:hint="@string/select_out_date"
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/c_2c"
+                android:textColorHint="@color/c_d0"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/supplyDate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/supplier_name"
+                app:layout_constraintTop_toTopOf="@+id/supplyDate" />
+
+            <View
+                android:id="@+id/v5"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/c_6b"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/supplier_name"
+                app:layout_constraintTop_toBottomOf="@+id/supplyDate" />
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="21dp"
+                android:alpha="0.5"
+                android:background="@drawable/selecter_27_common_bt"
+                android:gravity="center"
+                android:text="@string/commit"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                app:layout_constraintTop_toBottomOf="@+id/v5" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
